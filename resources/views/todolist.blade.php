@@ -22,6 +22,8 @@
             @csrf
             {{ method_field('put')}}
             <div class='row'>
+
+
                 
                 @if(count($errors->all()) > 0)
                 <div class="alert alert-danger" role="alert">
@@ -32,11 +34,11 @@
                         @endforeach
                     </ul>
                 </div>
-                
                 @endif
-                <div class="col-md-6 form-group ">
+                <div class="col-md-6 form-group">
                     <label>Task</label>
-                    <input class="form-control" type="text" name="task" value="{{ $todoone->task }}"  required>
+
+                    <textarea class="form-control" type="text" name="task"   required>{{ $todoone->task }}</textarea>
                 </div>
                 <div class="col-md-4 form-group">
                     <label>Date & Time</label>
@@ -71,7 +73,7 @@
                     @endif
                     <div class="col-md-6 form-group">
                         <label>Task</label>
-                        <input class="form-control" type="text" name="task" required>
+                        <textarea class="form-control" type="text" name="task" required></textarea>
                     </div>
                     <div class="col-md-4 form-group">
                         <label>Date & Time</label>
