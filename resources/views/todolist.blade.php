@@ -35,7 +35,7 @@
                     </ul>
                 </div>
                 @endif
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group ">
                     <label>Task</label>
                     <input class="form-control" type="text" name="task" value="{{ $todoone->task }}"  required>
                 </div>
