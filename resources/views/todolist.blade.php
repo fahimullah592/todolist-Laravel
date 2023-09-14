@@ -22,8 +22,6 @@
             @csrf
             {{ method_field('put')}}
             <div class='row'>
-
-
                 
                 @if(count($errors->all()) > 0)
                 <div class="alert alert-danger" role="alert">
@@ -34,6 +32,7 @@
                         @endforeach
                     </ul>
                 </div>
+                
                 @endif
                 <div class="col-md-6 form-group ">
                     <label>Task</label>
